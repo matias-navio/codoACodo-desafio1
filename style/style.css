@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Capriola", sans-serif;
+}
+
+main{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+}
+
+header h1{
+    color: rgb(220, 53, 53);
+}
+
+.lasagna{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+h2{
+    margin: 40px 0;
+    text-align: center;
+    color: rgb(220, 53, 53);
+}
+
+.content-ing{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ingredientes{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Pequeña sombra */
+}
+
+.content-prep{
+    width: 80%;
+    margin: 40px auto;
+    
+}
+
+.preparacion{
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-prep div{
+    margin-left: 50px;
+}
+
+.titulo{
+    font-size: 24px;
+    color: rgb(220, 53, 53);
+}
+
+.video-lasagna{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+    .ingredientes {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .lasagna {
+        width: 100%;
+    }
+
+    .content-ing, .content-prep {
+        width: 100%;
+    }
+
+    .content-prep div {
+        margin-left: 0;
+    }
+
+    .ingredientes, .preparacion {
+        width: 100%;
+        margin: 0 auto 20px; /* Agregamos un pequeño espacio entre los elementos */
+    }
+
+    .video-lasagna{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-lasagna iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
